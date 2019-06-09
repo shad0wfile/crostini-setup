@@ -26,6 +26,10 @@ echo -n "nano"
 echo ""
 echo -n "git"
 echo ""
+echo -n "telnet"
+echo ""
+echo -n "nmap"
+echo ""
 echo ""
  sleep 3
 
@@ -38,21 +42,23 @@ echo ""
 	# Sublime Text
 	wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 	echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-	sudo apt-get update && sudo apt-get install sublime-text
+	sudo apt-get update && sudo apt-get install sublime-text -y
 	# xfce4-terminal
-	sudo apt-get install xfce4-terminal
+	sudo apt-get install xfce4-terminal -y
 	# gnome-tweak-tool
-	sudo apt-get install gnome-tweak-tool
+	sudo apt-get install gnome-tweak-tool -y
 	# DNSUtils
-	sudo apt-get install dnsutils
+	sudo apt-get install dnsutils -y
 	# host
-	sudo apt-get install host
+	sudo apt-get install host -y
 	# exiftool
-	sudo apt-get install exiftool
+	sudo apt-get install exiftool -y
 	# nano editor
-	sudo apt-get install nano
-	# git
-	sudo apt-get install git
+	sudo apt-get install nano -y
+	# telnet (does not enable telnetd, just so you can run telnet to grab banners/etc from cmd line)
+	sudo apt-get install telnet -y
+	# nmap
+	sudo apt-get install nmap -y
 
 clear
 ## Additional details
