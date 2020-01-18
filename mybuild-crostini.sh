@@ -32,7 +32,7 @@ echo -n "nmap"
 echo ""
 echo -n "remmina"
 echo ""
-echo -n "other, adapta-gtk-theme, paper-icons, dracula termianl theme"
+echo -n "other, adapta-gtk-theme, paper-icons, dracula terminal theme"
 echo ""
 echo ""
  sleep 3
@@ -42,7 +42,7 @@ echo ""
 
 ## Install time
 	# Atom
-	wget https://atom.io/download/deb -O atom.deb && sudo apt-get install ./atom.deb && rm $HOME/atom.deb
+	wget https://atom.io/download/deb -O atom.deb && sudo apt-get install ./atom.deb && rm -rf $HOME/atom.deb
 	# Sublime Text
 	wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 	echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -68,8 +68,8 @@ echo ""
 	# other - adapta-gtk-theme, paper-icons, dracula termianl theme
 	sudo apt-get install adapta-gtk-theme -y && sudo apt-get install dconf-cli
 	wget https://launchpadlibrarian.net/425392562/paper-icon-theme_1.5.723-201905252133~daily~ubuntu18.04.1_all.deb
-	sudo dpkg -i $HOME/paper*.deb && sudo apt install -f && rm $HOME/paper*.deb
-	git clone https://github.com/dracula/gnome-terminal && bash $HOME/gnome-terminal/install.sh && rm -rf $HOME/gnome-terminal
+	#sudo dpkg -i $HOME/paper*.deb && sudo apt install -f && rm -rf $HOME/paper*.deb
+	#git clone https://github.com/dracula/gnome-terminal && bash $HOME/gnome-terminal/install.sh && rm -rf $HOME/gnome-terminal
 
 ## Additional details
 echo ""
@@ -81,6 +81,12 @@ echo ""
 echo -n "- make sure to pin any new applications you frequently use to your shelf"
 echo ""
 echo -n "- the final step completed above is for dracula theme to be installed for gnome-terminal"
+echo ""
+echo -n "- some issues with the paper themes and dracula term theme, so run these commands manually until I fix it"
+echo ""
+echo -n "- sudo dpkg -i $HOME/paper*.deb && sudo apt install -f && rm -rf $HOME/paper*.deb"
+echo ""
+echo -n "- git clone https://github.com/dracula/gnome-terminal && bash $HOME/gnome-terminal/install.sh && rm -rf $HOME/gnome-terminal"
 echo ""
 echo "--------------------------------------------------------------------------------------------"
 echo ""
