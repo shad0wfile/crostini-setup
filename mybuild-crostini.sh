@@ -32,6 +32,8 @@ echo -n "nmap"
 echo ""
 echo -n "remmina"
 echo ""
+echo -n "nvim (neovim)"
+echo ""
 echo -n "other, adapta-gtk-theme, paper-icons, dracula terminal theme"
 echo ""
 echo ""
@@ -63,8 +65,10 @@ echo ""
 	sudo apt-get install telnet -y
 	# nmap
 	sudo apt-get install nmap -y
-	# nmap
+	# remmina
 	sudo apt-get install remmina -y
+	# nvim (neovim)
+	sudo apt-get install neovim -y
 	# other - adapta-gtk-theme, paper-icons, dracula termianl theme
 	sudo apt-get install adapta-gtk-theme -y && sudo apt-get install dconf-cli
 	wget https://launchpadlibrarian.net/425392562/paper-icon-theme_1.5.723-201905252133~daily~ubuntu18.04.1_all.deb
