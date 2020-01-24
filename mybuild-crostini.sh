@@ -34,6 +34,12 @@ echo -n "remmina"
 echo ""
 echo -n "nvim (neovim)"
 echo ""
+echo -n "jq"
+echo ""
+echo -n "npm"
+echo ""
+echo -n "tldr"
+echo ""
 echo -n "other, adapta-gtk-theme, paper-icons, dracula terminal theme"
 echo ""
 echo ""
@@ -69,9 +75,17 @@ echo ""
 	sudo apt-get install remmina -y
 	# nvim (neovim)
 	sudo apt-get install neovim -y
+	# jq!
+	sudo apt-get install jq -y
+	# npm
+	sudo apt-get install npm -y
+	# tldr
+	sudo npm install -g tldr -y
 	# other - adapta-gtk-theme, paper-icons, dracula termianl theme
 	sudo apt-get install adapta-gtk-theme -y && sudo apt-get install dconf-cli
 	wget https://launchpadlibrarian.net/425392562/paper-icon-theme_1.5.723-201905252133~daily~ubuntu18.04.1_all.deb
+	# install resh history replacement
+	curl -fsSL https://raw.githubusercontent.com/curusarn/resh/master/scripts/rawinstall.sh | bash
 	#sudo dpkg -i $HOME/paper*.deb && sudo apt install -f && rm -rf $HOME/paper*.deb
 	#git clone https://github.com/dracula/gnome-terminal && bash $HOME/gnome-terminal/install.sh && rm -rf $HOME/gnome-terminal
 
